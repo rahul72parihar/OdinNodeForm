@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register Page</title>
+</head>
+<body>
+    {{>navbar}}
+    <h1>This is the Registration Page</h1>
+    <form action="/register" method="POST" class="register-form">
+        <input type="text" name="fullname" id="fullname" placeholder="Enter Name" required>
+        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <input type="password" name="conpassword" placeholder="Confirm Password" required>
+        <button type="submit">register</button>
+    </form>
+</body>
+</html>
